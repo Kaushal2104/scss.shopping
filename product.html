@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Product</title>
+
+</head>
+
+<body>
+    <!-- ---------------------- header ---------------------------- -->
+
+    <div class="container-fluid">
+        <div class="main-wraper">
+            <header class="main-header">
+                <div class="row h-100">
+                    <div class="col-md-1 col-lg-2 d-flex align-content-center">
+                        <div class="logo-header">
+                            <a href="#"><img src="asset/image/logo/cart-svg.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+
+                        <nav>
+                            <ul id="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a class="active" href="shop.html">Shop</a></li>
+                                <li><a href="#">Catagory</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">contact-us</a>
+                                    <!-- <ul>
+                                        <li><a href="#">sub-1</a></li>
+                                        <li><a href="#">sub-2</a></li>
+                                        <li><a href="#">sub-3</a></li>
+                                        <li><a href="#">sub-4</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <div class="col-md-3 col-lg-2">
+                        <div class="desktop-social-icon">
+                            <div class="icon">
+                                <a class="facebook" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <a class="twitter" href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a class="pinterest" href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a class="whatapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <header class="mobile-header">
+                <nav>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mobile-logo">
+                                <a href="#"><img src="asset/image/logo/cart-svg.svg" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="menu-btn"><a onclick="menuOpen()"><i class="fa-solid fa-bars"></i></a></div>
+                        </div>
+                        <div id="Navigation" class="fix-menu">
+                            <span onclick="closeMenu()" class="close-btn"><i
+                                    class="fa-solid fa-square-xmark"></i></span>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="#">Catagory</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">contact-us</a></li>
+                            </ul>
+                            <hr>
+                            <ul class="mb-social">
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <!-- ------------------------------------ banner ------------------------- -->
+    <div class="container-fluid">
+        <div class="banner product-bg">
+            <div class="row">
+                <div class="col">
+                    <div class="page-header">
+                        <div>
+                            <div class="title">
+                                <h2>PRODUCT</h2>
+                            </div>
+                            <div class="page-ind">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
+                                    <li>
+                                        <a href="#">Product</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sub-title">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus modi, id quod
+                                iusto ea
+                                itaque eaque sequi aperiam tempora molestiae nisi rerum voluptas doloribus nesciunt
+                                nihil. Voluptas ut ipsa necessitatibus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-sm-block">
+                    <!-- <div><img src="asset/image/png/mountent.png" alt="Mountain"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop-wraper">
+        <div class="single-product pt-50 pb-80">
+            <section class="container-fluid container-xxl">
+                <!-- <h2 class="title">Title for Product</h2> -->
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <div class="product-image">
+                            <div><a href="#"><img src="asset/image/product/1.jpg" alt="product image"></a></div>
+                            <div><a href="#"><img src="asset/image/product/2.jpg" alt="product image"></a></div>
+                            <div><a href="#"><img src="asset/image/product/3.jpg" alt="product image"></a></div>
+                            <div><a href="#"><img src="asset/image/product/4.jpg" alt="product image"></a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="product-text">
+                            <h2 class="product-name">Collar nake jacket</h2>
+                            <div>
+                                <ul class="rating-stock">
+                                    <li style="display: flex;">
+                                        <div class="product-rating ">
+                                            <i style="color: darkgoldenrod;" class="fa fa-star"></i>
+                                            <i style="color: darkgoldenrod;" class="fa fa-star"></i>
+                                            <i style="color: darkgoldenrod;" class="fa fa-star"></i>
+                                            <i style="color: darkgoldenrod;" class="fa fa-star"></i>
+                                            <i style="color: lightgray;" class="fa fa-star"></i>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="customer-review">
+                                                <p>(1 Customar Review)</p>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="stock-check">
+                                        <span><i class="fa-regular fa-square-check"></i></span>
+                                        <span class="ms-2">In stock</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="product-rate-wraper">
+                                    <ul>
+                                        <li class="product-rate">$50.00</li>
+                                        <li class="product-rate-off">$29.00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-short-decptrion">
+                                <div>
+                                    <p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna
+                                        molestie a.
+                                        Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero
+                                        ac
+                                        turpis pharetra</p>
+                                </div>
+                                <div class="product-decptrion-list">
+                                    <ul>
+                                        <li>
+                                            <p>Composition: 50% cotton,45% polyester, 5% polyamide</p>
+                                        </li>
+                                        <li>
+                                            <p>Filling: 100% polyester</p>
+                                        </li>
+                                        <li>
+                                            <p>Hood fur: 64% acrylic,23% modacrylic,13% polyester</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-num-cart">
+                                <ul>
+                                    <li class="product-num">
+                                        <div><span class="number number-set">-</span></div>
+                                        <div><input class="number-input" value="1" min="1" max="10" type="number"></div>
+                                        <div><span class="number number-set">+</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="cart-wraper">
+
+                                            <button class="cart-btn" data-toggle="tooltip" data-placement="top"
+                                                title="Add Cart">ADD CART </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="faverot-wraper">
+                                            <span><i class="fa-regular fa-heart" data-toggle="tooltip"
+                                                    data-placement="top" title="Add faverot"></i></span>
+                                            <span><i class="fa-solid fa-chart-simple" data-toggle="tooltip"
+                                                    data-placement="top" title="Add Compair"></i></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="categories-tag">
+                                <div>
+                                    <ul>
+                                        <li><span class="heading">SKU : REF LA-103</span></li>
+                                        <li><span class="heading">Categories : <a href="#">Fashion</a><a href="#">Main
+                                                    03</a></span></li>
+                                        <li><span class="heading">Tags : <a href="#">Cost</a><a href="#">Dresses</a><a
+                                                    href="#">fashion</a></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="social-wraper">
+                                <div class="social-icon">
+                                    <a class="facebook" href="#"><span class="icon"><i
+                                                class="fa-brands fa-facebook-f"></i></span></a>
+                                    <a class="instagram" href="#"><span class="icon"><i
+                                                class="fa-brands fa-instagram"></i></span></a>
+                                    <a class="twitter" href="#"><span class="icon"><i
+                                                class="fa-brands fa-twitter"></i></span></a>
+                                    <a class="whatsapp" href="#"><span class="icon"><i
+                                                class="fa-brands fa-whatsapp"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="accordion-custom">
+                    <div class="btn-group ">
+                        <!-- first-button -->
+                        <button class="active">Description</button>
+                        <!-- second-button -->
+                        <button>Review(1)</button>
+                        <!-- third-button -->
+                        <button>About Brand</button>
+                        <!-- four-button -->
+                        <button>Shipping & Delivery</button>
+                    </div>
+                    <!-- first-button-text -->
+                    <div class="acd-text btn-1 show">
+                        <div class="btn-decription">
+                            <div class="decription-imd overlap-effect"><a href="#"><img src="asset/image/product/6.jpg"
+                                        alt="product-image"></a></div>
+                            <div class="decription-text">
+                                <p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a.
+                                    Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac
+                                    turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat
+                                    tellus at, hendrerit arcu..</p>
+                                <ul>
+                                    <li>
+                                        <p>Maecenas eu ante a elit tempus fermentum. Aliquam
+                                            commodo tincidunt semper</p>
+                                    </li>
+                                    <li>
+                                        <p>Aliquam est et tempus. Eaecenas libero ante, tincidunt vel</p>
+                                    </li>
+                                </ul>
+                                <div class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second-button-text -->
+                    <div class="acd-text btn-2 ">
+                        <h3 class="review-title">1 review for High Collar Jacket</h3>
+                        <div class="all-review-container">
+                            <div class="review">
+                                <div class="clint-review-img">
+                                    <div><img src="asset/image/product/2.jpg" alt="logo"></div>
+                                </div>
+                                <div class="clint-review-text">
+                                    <div class="row">
+                                        <div class="col-6"><span class="clint-name">Jon snow</span> - <span
+                                                class="popst-date">March 14,2019</span></div>
+                                        <div class="col-6 d-flex justify-content-end"><span>
+                                                <i class="fa-solid fa-star" style="color: #b7871f;"></i>
+                                                <i class="fa-solid fa-star" style="color: #b7871f;"></i>
+                                                <i class="fa-solid fa-star" style="color: #b7871f;"></i>
+                                                <i class="fa-solid fa-star" style="color: #b7871f;"></i>
+                                                <i class="fa-solid fa-star" style="color: #707275;"></i>
+                                            </span>
+                                        </div>
+                                        <div class="review-text">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quod
+                                                rerum consequatur repudiandae debitis optio minus, voluptatem id
+                                                architecto, quisquam odit. Voluptate, nihil. Reiciendis, eum, eligendi
+                                                quibusdam consectetur esse saepe accusantium, mollitia possimus eveniet
+                                                pariatur optio unde? At blanditiis illo quaerat enim obcaecati
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-12 col-md-6">
+                                    <div class="review-creat-box my-4">
+                                        <h4>Add a Review</h4>
+                                        <p>Your email address will not be published. Required fields are
+                                            marked<span style="color: red;margin-left: 7px;">*</span></p>
+                                    </div>
+                                    <form class="review-form" action="#">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6  pe-4">
+                                                <label for="name">Name <span class="text-danger">*</span></label><br>
+                                                <input type="text" required>
+                                            </div>
+                                            <div class="col-12 col-md-6  pe-4">
+                                                <label for="Email">Email <span class="text-danger">*</span></label><br>
+                                                <input type="text" required>
+                                            </div>
+                                            <div class="col-12 p-0 my-5">
+                                                <div class="rating-star">
+                                                    <div class="d-flex">
+                                                        <i class="fa-solid fa-star" style="color: #b7871f;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #b7871f;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #b7871f;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                                                        <i class="fa-solid fa-star" style="color: #000000;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-0">
+                                                <div>
+                                                    <label for="review">Your Review</label><br>
+                                                    <textarea class="review-write" placeholder="typing....."
+                                                        name="review-box-text"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="submit-btn"><input type="submit" value="Submit"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third-button-text -->
+                    <div class="acd-text btn-3 ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro quis tempore fugit, atque
+                            sequi officia. Alias iure vero iste velit ab atque unde voluptate ducimus dolorum, rerum
+                            tempore qui?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor unde at hic, provident ad
+                            quo? Possimus earum inventore blanditiis ab quas distinctio, magnam veritatis molestias
+                            itaque? In numquam voluptatem quod maiores quis reprehenderit eum odio dignissimos
+                            aspernatur, consequuntur velit ab.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum officiis saepe
+                                neque.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ipsam totam eaque
+                            dolore temporibus aspernatur exercitationem fuga nulla?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis fuga a, nobis nesciunt
+                            molestias quo voluptatibus earum labore, eveniet harum ex quos?</p>
+                    </div>
+                    <!-- four-button-text -->
+                    <div class="acd-text btn-4 ">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque numquam, error repellat
+                            ea veritatis totam molestiae! Tempore minima eius voluptatem, facilis nam atque corporis
+                            explicabo? Ipsa quod repellat reiciendis blanditiis quam iusto cumque consequatur ratione
+                            quo sint similique, laborum aliquam id aperiam quae ipsum tempora atque repudiandae
+                            explicabo dicta officia adipisci ad! Fugiat consequuntur voluptate id cumque quaerat. In
+                            velit culpa ducimus minus! Distinctio, mollitia molestiae, vero possimus velit aperiam
+                            accusamus earum blanditiis quia saepe quibusdam libero fuga dolore voluptas.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor unde at hic, provident ad
+                            quo? Possimus earum inventore blanditiis ab quas distinctio, magnam veritatis molestias
+                            itaque? In numquam voluptatem quod maiores quis reprehenderit eum odio dignissimos
+                            aspernatur, consequuntur velit ab.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum officiis saepe
+                                neque.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ipsam totam eaque
+                            dolore temporibus aspernatur exercitationem fuga nulla?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis fuga a, nobis nesciunt
+                            molestias quo voluptatibus earum labore, eveniet harum ex quos?</p>
+                    </div>
+                </div>
+                <div class="related-product-container">
+                    <div class="product-rtd">
+                        <div class="relative-product">
+                            <div class="product-image-rtd">
+                                <a href="#">
+                                    <img src="asset/image/product/1.jpg" alt="relative-product">
+                                </a>
+
+                                <a class="search quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">
+                                        tooltip open
+                                    </span>
+                                </a>
+                                <a class="favroit quick-tab" href="#"><span class="icon"><i class="fa-regular fa-heart"
+                                            style="color: #edf1f7;"></i></span>
+                                    <span class="icon-tooltip">Add to favorit</span>
+                                </a>
+
+                                <a class="compair quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-chart-simple" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">Add to compair</span></a>
+
+
+                                <!-- <span class="add-cart-btn"><button>ADD CART</button></span> -->
+                            </div>
+                            <div class="product-rtl-text">
+                                <a href="#">
+                                    Product Name
+                                </a><br>
+                                <span class="product-price">$90</span>
+                            </div>
+
+
+                        </div>
+                        <div class="relative-product">
+                            <div class="product-image-rtd">
+                                <a href="#">
+                                    <img src="asset/image/product/2.jpg" alt="relative-product">
+                                </a>
+
+                                <a class="search quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">
+                                        tooltip open
+                                    </span>
+                                </a>
+                                <a class="favroit quick-tab" href="#"><span class="icon"><i class="fa-regular fa-heart"
+                                            style="color: #edf1f7;"></i></span>
+                                    <span class="icon-tooltip">Add to favorit</span>
+                                </a>
+
+                                <a class="compair quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-chart-simple" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">Add to compair</span></a>
+
+
+                                <!-- <span class="add-cart-btn"><button>ADD CART</button></span> -->
+                            </div>
+                            <div class="product-rtl-text">
+                                <a href="#">
+                                    Product Name
+                                </a><br>
+                                <span class="product-price">$90</span>
+                            </div>
+
+
+                        </div>
+                        <div class="relative-product">
+                            <div class="product-image-rtd">
+                                <a href="#">
+                                    <img src="asset/image/product/3.jpg" alt="relative-product">
+                                </a>
+
+                                <a class="search quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">
+                                        tooltip open
+                                    </span>
+                                </a>
+                                <a class="favroit quick-tab" href="#"><span class="icon"><i class="fa-regular fa-heart"
+                                            style="color: #edf1f7;"></i></span>
+                                    <span class="icon-tooltip">Add to favorit</span>
+                                </a>
+
+                                <a class="compair quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-chart-simple" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">Add to compair</span></a>
+
+
+                                <!-- <span class="add-cart-btn"><button>ADD CART</button></span> -->
+                            </div>
+                            <div class="product-rtl-text">
+                                <a href="#">
+                                    Product Name
+                                </a><br>
+                                <span class="product-price">$90</span>
+                            </div>
+
+
+                        </div>
+                        <div class="relative-product">
+                            <div class="product-image-rtd">
+                                <a href="#">
+                                    <img src="asset/image/product/4.jpg" alt="relative-product">
+                                </a>
+
+                                <a class="search quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">
+                                        tooltip open
+                                    </span>
+                                </a>
+                                <a class="favroit quick-tab" href="#"><span class="icon"><i class="fa-regular fa-heart"
+                                            style="color: #edf1f7;"></i></span>
+                                    <span class="icon-tooltip">Add to favorit</span>
+                                </a>
+
+                                <a class="compair quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-chart-simple" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">Add to compair</span></a>
+
+
+                                <!-- <span class="add-cart-btn"><button>ADD CART</button></span> -->
+                            </div>
+                            <div class="product-rtl-text">
+                                <a href="#">
+                                    Product Name
+                                </a><br>
+                                <span class="product-price">$90</span>
+                            </div>
+
+
+                        </div>
+                        <div class="relative-product">
+                            <div class="product-image-rtd">
+                                <a href="#">
+                                    <img src="asset/image/product/5.jpg" alt="relative-product">
+                                </a>
+
+                                <a class="search quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">
+                                        tooltip open
+                                    </span>
+                                </a>
+                                <a class="favroit quick-tab" href="#"><span class="icon"><i class="fa-regular fa-heart"
+                                            style="color: #edf1f7;"></i></span>
+                                    <span class="icon-tooltip">Add to favorit</span>
+                                </a>
+
+                                <a class="compair quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-chart-simple" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">Add to compair</span></a>
+
+
+                                <!-- <span class="add-cart-btn"><button>ADD CART</button></span> -->
+                            </div>
+                            <div class="product-rtl-text">
+                                <a href="#">
+                                    Product Name
+                                </a><br>
+                                <span class="product-price">$90</span>
+                            </div>
+
+
+                        </div>
+                        <div class="relative-product">
+                            <div class="product-image-rtd">
+                                <a href="#">
+                                    <img src="asset/image/product/1.jpg" alt="relative-product">
+                                </a>
+
+                                <a class="search quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">
+                                        tooltip open
+                                    </span>
+                                </a>
+                                <a class="favroit quick-tab" href="#"><span class="icon"><i class="fa-regular fa-heart"
+                                            style="color: #edf1f7;"></i></span>
+                                    <span class="icon-tooltip">Add to favorit</span>
+                                </a>
+
+                                <a class="compair quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-chart-simple" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">Add to compair</span></a>
+
+
+                                <!-- <span class="add-cart-btn"><button>ADD CART</button></span> -->
+                            </div>
+                            <div class="product-rtl-text">
+                                <a href="#">
+                                    Product Name
+                                </a><br>
+                                <span class="product-price">$90</span>
+                            </div>
+
+
+                        </div>
+                        <div class="relative-product">
+                            <div class="product-image-rtd">
+                                <a href="#">
+                                    <img src="asset/image/product/1.jpg" alt="relative-product">
+                                </a>
+
+                                <a class="search quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">
+                                        tooltip open
+                                    </span>
+                                </a>
+                                <a class="favroit quick-tab" href="#"><span class="icon"><i class="fa-regular fa-heart"
+                                            style="color: #edf1f7;"></i></span>
+                                    <span class="icon-tooltip">Add to favorit</span>
+                                </a>
+
+                                <a class="compair quick-tab" href="#"><span class="icon"><i
+                                            class="fa-solid fa-chart-simple" style="color: #ffffff;"></i></span>
+                                    <span class="icon-tooltip">Add to compair</span></a>
+
+
+                                <!-- <span class="add-cart-btn"><button>ADD CART</button></span> -->
+                            </div>
+                            <div class="product-rtl-text">
+                                <a href="#">
+                                    Product Name
+                                </a><br>
+                                <span class="product-price">$90</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <span class="caro-btn left"><i class="fa-solid fa-angle-left"></i></span>
+                    <span class="caro-btn right"><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- ---------------------------- footer ----------------------- -->
+    <div class="footer-wraper">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-2">
+                        <div class="footer-logo">
+                            <i class="logo"><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px"
+                                    y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path
+                                            d="M26.42,55.55c0.61,2.72,1,5.1,1.69,7.38c0.84,2.74,2.72,3.86,6.02,3.87c14.2,0.01,28.4,0.01,42.6,0.01   c2.78,0,5.57-0.03,8.35,0.02c0.82,0.01,1.81-0.02,2.4,0.42c0.72,0.53,1.51,1.54,1.5,2.33c-0.01,0.79-0.81,1.86-1.57,2.28   c-0.81,0.45-1.96,0.4-2.96,0.4c-16.52,0.02-33.04,0.02-49.56,0.01c-6.93,0-10.76-3.21-12.17-10.09   c-3.17-15.53-6.36-31.05-9.54-46.58C12.29,11.28,11.92,11,7.44,11c-1.3,0-2.6,0.06-3.9-0.02c-1.64-0.1-2.94-0.79-2.98-2.63   c-0.05-1.85,1.2-2.67,2.85-2.75c2.13-0.11,4.28-0.16,6.4,0.04c2.55,0.25,5.07,1.09,6.29,3.52c0.96,1.91,2.32,1.99,4.07,1.99   c20.23-0.04,40.46-0.02,60.69-0.02c3.99,0,7.98-0.03,11.97,0.01c5.19,0.04,7.51,2.93,6.29,7.93c-2.25,9.18-4.53,18.36-6.88,27.52   c-1.47,5.73-5.8,8.97-11.82,8.98c-16.8,0.02-33.59,0.01-50.39,0.01C28.93,55.55,27.84,55.55,26.42,55.55z M94.48,16.71   c-25.52,0-50.62,0-76.02,0c2.28,11.22,4.52,22.23,6.76,33.24c0.78,0.06,1.23,0.13,1.68,0.13c18.18,0.01,36.36,0.02,54.54,0   c3.08,0,4.94-1.47,5.84-4.54c0.6-2.04,1.05-4.13,1.56-6.2C90.7,31.89,92.55,24.44,94.48,16.71z" />
+                                        <path
+                                            d="M24.19,84.8c0.03-5.09,4.66-9.74,9.59-9.63c5.07,0.12,9.48,4.77,9.36,9.85c-0.12,5.01-4.56,9.46-9.45,9.49   C28.73,94.54,24.16,89.88,24.19,84.8z M33.56,89.07c2.61,0.05,4.46-1.68,4.49-4.19c0.03-2.39-1.68-4.17-4.12-4.27   c-2.62-0.12-4.51,1.54-4.61,4.05C29.2,87.17,30.98,89.02,33.56,89.07z" />
+                                        <path
+                                            d="M87.73,84.84c0,5.1-4.59,9.74-9.56,9.66c-5.04-0.07-9.52-4.74-9.41-9.81c0.1-5.03,4.48-9.46,9.42-9.53   C83.14,75.1,87.73,79.75,87.73,84.84z M78.32,80.61c-2.6-0.04-4.45,1.71-4.46,4.22c0,2.4,1.71,4.15,4.16,4.24   c2.61,0.1,4.49-1.58,4.58-4.08C82.69,82.48,80.89,80.64,78.32,80.61z" />
+                                    </g>
+                                </svg></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-7 mb-5 mb-md-0">
+                        <div class="footer-menu">
+
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">contact-us</a></li>
+                                <li><a href="#">Shop</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">contact-us</a></li>
+                                <li><a href="#">Shop</a></li>
+                            </ul>
+
+                            <!-- <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">contact-us</a></li>
+                                <li><a href="#">Shop</a></li>
+                            </ul> -->
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 col-md-3 py-4 p-sm-4">
+                        <div>
+                            <form id="subscrib" action="#">
+
+                                <input type="email" placeholder="Enter your email.." name="joinlink" id="subscribinput">
+                                <input type="button" value="Submit">
+
+                            </form>
+                        </div>
+                        <br class="py-4 mt-3">
+                        <address>
+                            <strong>ADDRESS</strong><br>
+                            <span>711 / 7 flor, Gala Empire , memnagar , Ahmedabad , Gujarat</span><br>
+                            <span>Pin - 380001</span>
+                        </address>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-4 col-md-3 py-4">
+                        <div>
+                            <form id="subscrib" action="#">
+                                <div class="col-12 mb-4">
+                                    <input type="email" placeholder="Enter your email.." name="joinlink"
+                                        id="subscribinput">
+                                </div>
+                                <div class="col-12">
+                                    <input type="button" value="subscribe">
+                                </div>
+                            </form>
+                        </div>
+                    </div> -->
+
+            </div>
+    </div>
+
+    </footer>
+    </div>
+
+
+    <!-- ---------------------------------------------------- shop end ---------------------------------- -->
+
+    <script src="asset/js/index.js"></script>
+</body>

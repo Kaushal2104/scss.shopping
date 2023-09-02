@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap");
+
+@mixin flex-content($topBottom, $leftRight) {
+  display: flex;
+  align-items: $topBottom;
+  justify-content: $leftRight;
+}
+
+.shop-pag-title {
+  font-size: 3.5rem;
+  text-shadow: 0 0 2px rgb(151, 148, 148);
+}
+
+.shop-wraper {
+  // padding: 20px 0px;
+  padding: 0;
+  .col-md-6 {
+    padding: 0;
+  }
+  .All_product-main {
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-auto-rows: minmax(100px, 50vw);
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include media("<=sm") {
+      grid-template-columns: repeat(1, 1fr);
+      // grid-auto-rows: minmax(500px, 100vh);
+      grid-auto-rows: 50vh;
+      /*------*/
+    }
+    .product {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        img {
+          transform: scale($Imagescale);
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        z-index: 0;
+        transition: all 0.3s ease-in-out;
+        //   position: relative;
+      }
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+        pointer-events: none;
+      }
+      .product-info {
+        pointer-events: none;
+        width: min-content;
+        height: fit-content;
+        padding: 10px 20px;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        color: white;
+
+        z-index: 5;
+        .link button:hover:has(.name h2) {
+          text-shadow: 0 0 5px green;
+        }
+
+        .name {
+          h2 {
+            pointer-events: fill;
+            width: min-content;
+            font-size: $FrontProductsize;
+            font-family: $productFontFamily;
+            letter-spacing: $letter-spacingProduct;
+            color: white;
+            background-clip: text;
+            opacity: 0.5;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        .link {
+          margin-top: 20px;
+          display: flex;
+          button {
+            pointer-events: all;
+            margin-left: auto;
+            background-color: #1717179c;
+            border: none;
+            color: white;
+            transition: all 0.3s ease-in-out;
+            padding: 10px 20px;
+            font-size: 2rem;
+            // letter-spacing: 2.5px;
+            letter-spacing: $ltterspacingButton;
+
+            &:hover {
+              &:hover:has(.name h2) {
+                text-shadow: 0 0 5px white;
+              }
+            }
+          }
+        }
+        // @include media(">xl") {
+        //   .name {
+        //     h2 {
+        //       font-size: 4vw;
+        //     }
+        //   }
+        //   .link {
+        //     button {
+        //       font-size: 1.2vw;
+        //       padding: 0.5vw 2vw;
+        //     }
+        //   }
+        // }
+        @include media("<=sm") {
+          .name {
+            h2 {
+              color: white;
+              -webkit-text-stroke: transparent;
+              opacity: 1;
+              // font-size: $FrontProductsizeMobile;
+            }
+          }
+          .link {
+            button {
+              background-color: rgb(199, 94, 112);
+            }
+          }
+        }
+      }
+      &:hover {
+        &::before {
+          // bottom: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          visibility: visible;
+        }
+        .product-info {
+          .name {
+            h2 {
+              opacity: 1;
+            }
+          }
+          .link {
+            button {
+              background-color: rgb(199, 94, 112);
+              color: #171717;
+              &:hover {
+                background-color: rgb(206, 40, 67);
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      &.text-effect-expanded {
+        &:hover {
+          .product-info {
+            .name {
+              h2 {
+                letter-spacing: calc($letter-spacingProduct + 0.1rem);
+                color: white;
+                opacity: 1;
+                word-spacing: 15px;
+              }
+            }
+          }
+        }
+      }
+      &.text-effect-collapsed {
+        &:hover {
+          .product-info {
+            .name {
+              h2 {
+                letter-spacing: calc($letter-spacingProduct - 0.1rem);
+                color: white;
+                opacity: 1;
+                word-spacing: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.newsletter-container {
+  background-color: #50e3c2;
+  padding: 70px 100px;
+  @include media("<=sm") {
+    padding: 70px 10px;
+  }
+  .form-container {
+    .newsletter-box {
+      display: flex;
+      flex-direction: row;
+      .text {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          font-size: 3.6rem;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: end;
+          margin-right: 40px;
+          @include media("<=sm") {
+            text-align: center;
+            font-size: 2.5rem;
+          }
+        }
+      }
+      .input-box {
+        flex-grow: 2;
+        // display: flex;
+
+        .inp {
+          // display: flex;
+          display: grid;
+          grid-template-columns: 1fr 70px;
+
+          input {
+            &[type="text"] {
+              border: 1px solid #171717;
+              border-right: transparent;
+              padding: 20px 10px;
+              outline: none;
+              background-color: transparent;
+              font-size: 2.2rem;
+              flex-grow: 2;
+              // width: 100%;
+              @include media("<=sm") {
+                font-size: 1.3rem;
+              }
+            }
+            &[type="submit"] {
+              background-color: transparent;
+              border: 1px solid #171717;
+              border-left: transparent;
+              font-size: 1.5rem;
+              // letter-spacing: 0.2rem;
+              padding-right: 40px;
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                color: darkgoldenrod;
+              }
+            }
+          }
+        }
+      }
+      @include media("<=md") {
+        flex-direction: column;
+        .text {
+          justify-content: center;
+          margin-bottom: 20px;
+          h3 {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

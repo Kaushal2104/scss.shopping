@@ -1,0 +1,70 @@
+@mixin bannerBackground($bottom, $right) {
+  background-size: $bottom $right;
+  background-position: bottom right;
+  // background-attachment: fixed;
+  //   background-blend-mode: exclusion;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  &.index-bg {
+    background: lightgray url(../image/png/mounten\ black.png);
+    @include bannerBackground(50%, 50%);
+  }
+  &.shop-bg {
+    background: #f1f1f1 url(../image/png/higway.png);
+    @include bannerBackground(50%, 50%);
+  }
+  &.product-bg {
+    background: #f1f1f1 url(../image/png/product.png);
+    @include bannerBackground(30%, 50%);
+    background-position: center right 10%;
+  }
+  padding: 50px 50px;
+  min-height: 60vh;
+  @include media("<=sm") {
+    background-size: 100% 50%;
+    padding: 30px 30px;
+    min-height: unset;
+  }
+  .page-header {
+    .title {
+      h2 {
+        font-size: 3.5rem;
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .page-ind {
+      margin: 20px 0;
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin-right: 12px;
+          &:nth-child(2n) {
+            a {
+              color: white;
+            }
+          }
+          a {
+            color: #171717;
+            text-decoration: none;
+            font-size: 1.5rem;
+
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1.5px;
+          }
+        }
+      }
+    }
+    .sub-title {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+/**
+*
+* custom class start
+*
+**/
+
+// variables for inner css
+// loop padding
+$padding: (top, pt), (right, pr), (bottom, pb), (left, pl);
+@each $pd, $pname in $padding {
+  @for $num from 1 through 20 {
+    .#{$pname}-#{$num*5} {
+      padding-#{$pd}: #{$num * 5}px;
+    }
+  }
+}
+
+/**
+*
+* loop content text top bottom position  
+*
+**/
+
+$leftright: left, center, right;
+$topbottom: (top, start), (center, center), (bottom, end);
+@each $lr in $leftright {
+  @each $tb, $pos in $topbottom {
+    .flex-#{$lr}-#{$tb} {
+      display: flex;
+      justify-content: $lr;
+      align-items: $pos;
+      text-align: $lr;
+    }
+  }
+}
+
+$topbottom: top, center, bottom;
+$leftright: left, center, right;
+@each $tb in $topbottom {
+  @each $lr in $leftright {
+    .#{$tb}-#{$lr} {
+      @if $tb==center and $lr==center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: #{$lr};
+        transform: translate(-50%, -50%) !important;
+      } @else if $tb==center {
+        position: absolute;
+        top: 50%;
+        #{$lr}: 10px;
+        text-align: #{$lr};
+        transform: translateY(-50%);
+      } @else if $lr==center {
+        position: absolute;
+        #{$tb}: 10px;
+        left: 50%;
+        text-align: #{$lr};
+        transform: translateX(-50%);
+      } @else {
+        position: absolute;
+        #{$tb}: 10px;
+        #{$lr}: 10px;
+        text-align: #{$lr};
+      }
+    }
+    .#{$tb}-#{$lr} .link {
+      justify-content: #{$lr};
+    }
+  }
+}
+
+@include media(">sm", "<md") {
+  $topbottom: top, center, bottom;
+  $leftright: left, center, right;
+  @each $tb in $topbottom {
+    @each $lr in $leftright {
+      .md-#{$tb}-#{$lr} {
+        @if $tb==center and $lr==center {
+          position: absolute;
+          top: 50% !important;
+          left: 50% !important;
+          text-align: #{$lr};
+          transform: translate(-50%, -50%) !important;
+        } @else if $tb==center {
+          position: absolute;
+          top: 50% !important;
+          #{$lr}: 10px !important;
+          text-align: #{$lr} !important;
+          transform: translateY(-50%) !important;
+        } @else if $lr==center {
+          position: absolute;
+          #{$tb}: 10px !important;
+          left: 50% !important;
+          text-align: #{$lr};
+          transform: translateX(-50%) !important;
+        } @else {
+          position: absolute;
+          #{$tb}: 10px !important;
+          #{$lr}: 10px !important;
+          text-align: #{$lr} !important;
+        }
+      }
+      .md-#{$tb}-#{$lr} .link {
+        justify-content: #{$lr} !important;
+      }
+    }
+  }
+}
+
+@include media(">xs") {
+  $topbottom: top, center, bottom;
+  $leftright: left, center, right;
+  @each $tb in $topbottom {
+    @each $lr in $leftright {
+      .sm-#{$tb}-#{$lr} {
+        @if $tb==center and $lr==center {
+          position: absolute;
+          top: 50% !important;
+          left: 50% !important;
+          transform: translate(-50%, -50%) !important;
+        } @else if $tb==center {
+          position: absolute;
+          top: 50% !important;
+          #{$lr}: 10px !important;
+          transform: translateY(-50%) !important;
+        } @else if $lr==center {
+          position: absolute;
+          #{$tb}: 10px !important;
+          left: 50% !important;
+          transform: translateX(-50%) !important;
+        } @else {
+          position: absolute;
+          #{$tb}: 10px !important;
+          #{$lr}: 10px !important;
+        }
+      }
+      .sm-#{$tb}-#{$lr} .link {
+        justify-content: #{$lr} !important;
+      }
+    }
+  }
+}
+
+// width value in pursentage
+
+@for $wid from 1 through 10 {
+  .width-#{$wid*10} {
+    width: #{$wid * 10%};
+  }
+}
+
+/**
+*
+* custom class end
+*
+**/

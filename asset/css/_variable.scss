@@ -1,0 +1,25 @@
+// desktop and Mobile font size //
+// Header font size Desktop
+$fontSizeHeaderMenuPc: 1.5rem; //desktop header menu font size
+$SocialIconPc: 1.7rem; //desktop header menu social icon font size
+$HeaderLinkBG-Color: #171717; //Header link hover background color value example (#0000) /  (rgb) / (hsl)
+
+//mobile header
+$fontSizeHeaderMenuMobile: 2rem; // Mobile font size Menu
+$FontSizeMobileSocial: 1.9rem; // mobile social icon font size Menu
+
+//footer
+$FooterLogo: 5rem; // footer logo size
+$FooterFontSize: 1.5rem; // footer font size
+
+// Page font //
+$FrontProductsize: clamp(2rem, 4vw, 4rem); //product font size desktop
+$letter-spacingProduct: 1rem; // letter spacing product font
+$ltterspacingButton: 0.2rem; // ltter-spacing product button
+$Imagescale: 1.04; // image scale effect default 1
+$productFontFamily: "Josefin Sans", sans-serif; // product font family
+
+// Single Product
+$SingleProductNameSize: 3.5rem; //product name font size
+$productRateFontSize: 2rem; // product price font size
+$tooltipFontSize: 0.8rem; // tooltip font size
